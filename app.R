@@ -5,17 +5,15 @@ rm(list=ls())
 
 # test
 
-sample_table = readRDS("/R_work/test_repo_R_local/local storage/sample_table.rds")
-# sample_table = data.frame(col1 = as.character(c("one","two","three","four","this is a loaded RDS table")),
-#                          col2 = as.numeric(c(1,2,3,4,5)))
-  
+sample_table = readRDS("/home/MihaiG/test_repo_R_local/local storage/sample_table.rds")
+
 ui = fluidPage(
   sidebarLayout(
     sidebarPanel(
       selectInput(
         "input_name",
         "Select name",
-        choices = c("Beavus","Butthead","Mitica","Zoltan")
+        choices = c("Beavus","Butthead","Mitica","Zoltan","Remote boy")
       )
     ),
     mainPanel(
