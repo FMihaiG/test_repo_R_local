@@ -5,7 +5,10 @@ rm(list=ls())
 
 # test
 
-sample_table = readRDS("/home/MihaiG/test_repo_R_local/local storage/sample_table.rds")
+# sample_table = readRDS("/home/MihaiG/test_repo_R_local/local storage/sample_table.rds")
+
+sample_table = data.frame(A = as.numeric(c("1","2","3")),
+                          B = as.character(c("A","B","C")))
 
 ui = fluidPage(
   sidebarLayout(
