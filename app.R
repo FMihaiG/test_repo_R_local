@@ -5,7 +5,7 @@ rm(list=ls())
 
 # test
 
-sample_table = readRDS("/home/MihaiG/test_repo_R_local/local storage/sample_table.rds")
+sample_table = readRDS("/srv/shiny-server/test_repo_R_local/local storage/sample_table.rds")
 
 ui = fluidPage(
   sidebarLayout(
